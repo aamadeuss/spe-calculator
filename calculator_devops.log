@@ -1,0 +1,16 @@
+19:05:51.929 [main] INFO  spe.calculator.Main - Executing factorial function.
+19:05:51.934 [main] INFO  spe.calculator.Main - Executing multiplication function.
+19:05:51.935 [main] INFO  spe.calculator.Main - Executing addition function.
+19:05:51.935 [main] INFO  spe.calculator.Main - Executing natural logarithm function.
+19:05:51.936 [main] INFO  spe.calculator.Main - Executing division function.
+19:05:51.936 [main] INFO  spe.calculator.Main - Executing square root function.
+19:05:51.937 [main] INFO  spe.calculator.Main - Executing exponentiation function.
+19:05:51.937 [main] INFO  spe.calculator.Main - Executing subtraction function.
+19:07:45.861 [main] INFO  spe.calculator.Main - Executing factorial function.
+19:07:45.867 [main] INFO  spe.calculator.Main - Executing multiplication function.
+19:07:45.867 [main] INFO  spe.calculator.Main - Executing addition function.
+19:07:45.868 [main] INFO  spe.calculator.Main - Executing natural logarithm function.
+19:07:45.868 [main] INFO  spe.calculator.Main - Executing division function.
+19:07:45.869 [main] INFO  spe.calculator.Main - Executing square root function.
+19:07:45.869 [main] INFO  spe.calculator.Main - Executing exponentiation function.
+19:07:45.870 [main] INFO  spe.calculator.Main - Executing subtraction function.-41.0
