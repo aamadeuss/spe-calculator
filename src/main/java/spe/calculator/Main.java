@@ -83,9 +83,9 @@ public class Main {
                         System.out.print("Enter the base: ");
                         num1 = reader.nextDouble();
                         System.out.print("Enter the exponent: ");
-                        exp = reader.nextDouble();
+                        num2 = reader.nextDouble();
                         System.out.println("");
-                        exponentiation(num1, exp);
+                        exponentiation(num1, num2);
                         break;
 
                     case 6: //Square root
