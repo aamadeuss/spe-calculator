@@ -13,4 +13,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker start -i -d --name Calculator aamadeuss/spe-calculator
+      shell: docker create -it --name Calculator aamadeuss/spe-calculator
