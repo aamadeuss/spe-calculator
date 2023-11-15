@@ -139,7 +139,7 @@ public class Main {
         System.out.println("");
         System.out.println("Result: " + result);
         System.out.println("");
-        logger.info("Executing subtraction function.");
+        logger.info("Executing subtractionn function.");
         return result;
     }
 
