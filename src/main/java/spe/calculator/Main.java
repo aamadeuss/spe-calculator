@@ -153,6 +153,13 @@ public class Main {
     }
 
     public static double division(double num1, double num2){
+        if (num2 == 0) {
+            System.out.println("");
+            System.out.println("Result: Undefined. Cannot divide by zero!");
+            System.out.println("");
+            logger.info("Executing division function.");
+            return Double.POSITIVE_INFINITY;
+        }
         double result = num1 / num2;
         System.out.println("");
         System.out.println("Result: " + result);
@@ -171,6 +178,13 @@ public class Main {
     }
 
     public static double squareRoot(double num1){
+        if(num1 < 0){
+            System.out.println("");
+            System.out.println("Result: Undefined. Cannot find square root of a negative number!");
+            System.out.println("");
+            logger.info("Executing square root function.");
+            return Double.NaN;
+        }
         double result = Math.sqrt(num1);
         System.out.println("");
         System.out.println("Result: " + result);
@@ -180,6 +194,13 @@ public class Main {
     }
 
     public static int factorial(int num){
+        if(num < 0){
+            System.out.println("");
+            System.out.println("Result: Undefined. Cannot find factorial of a negative number!");
+            System.out.println("");
+            logger.info("Executing factorial function.");
+            return -1;
+        }
         int result = 1;
         for(int i = 1; i <= num; i++){
             result *= i;
@@ -192,6 +213,13 @@ public class Main {
     }
 
     public static double naturalLogarithm(double num){
+        if(num <= 0){
+            System.out.println("");
+            System.out.println("Result: Undefined. Cannot find natural logarithm of a negative number or zero!");
+            System.out.println("");
+            logger.info("Executing natural logarithm function.");
+            return Double.NaN;
+        }
         double result = Math.log(num);
         System.out.println("");
         System.out.println("Result: " + result);
