@@ -9,7 +9,7 @@ public class CalcTest {
     public void setUp() {
         calculator = new Main();
     }
-    // tests begin
+    // tests begin here
     @Test
     public void testAddition() {
         double val1 = 17.0;
