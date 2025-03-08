@@ -22,16 +22,12 @@ public class Main {
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
             System.out.println("4. Division");
-            System.out.println("5. Exponentiation");
-            System.out.println("6. Square root");
-            System.out.println("7. Factorial");
-            System.out.println("8. Natural logarithm");
-            System.out.println("9. Exit");
+            System.out.println("5. Exit");
             System.out.println("");
             System.out.print("Your choice: ");
             operation = reader.nextInt();
             System.out.println("");
-            if(operation == 9) flag = 1;
+            if(operation == 5) flag = 1;
             else{
                 switch (operation) {
                     case 1: //Addition
@@ -75,44 +71,6 @@ public class Main {
                         num2 = reader.nextDouble();
                         System.out.println("");
                         division(num1, num2);
-                        break;
-
-                    case 5: //Exponentiation
-                        System.out.println("---Exponentiation---");
-                        System.out.print("");
-                        System.out.print("Enter the base: ");
-                        num1 = reader.nextDouble();
-                        System.out.print("Enter the exponent: ");
-                        exp = reader.nextDouble();
-                        System.out.println("");
-                        exponentiation(num1, exp);
-                        break;
-
-                    case 6: //Square root
-                        System.out.println("---Square root---");
-                        System.out.print("");
-                        System.out.print("Enter the number: ");
-                        num1 = reader.nextDouble();
-                        System.out.println("");
-                        squareRoot(num1);
-                        break;
-                    
-                    case 7: //Factorial
-                        System.out.println("---Factorial---");
-                        System.out.print("");
-                        System.out.print("Enter the number: ");
-                        num_ = reader.nextInt();
-                        System.out.println("");
-                        factorial(num_);
-                        break;
-                    
-                    case 8: //Natural logarithm
-                        System.out.println("---Natural logarithm---");
-                        System.out.print("");
-                        System.out.print("Enter the number: ");
-                        num1 = reader.nextDouble();
-                        System.out.println("");
-                        naturalLogarithm(num1);
                         break;
                     
                     default:
@@ -165,66 +123,6 @@ public class Main {
         System.out.println("Result: " + result);
         System.out.println("");
         logger.info("Executing division function.");
-        return result;
-    }
-
-    public static double exponentiation(double num1, double num2){
-        double result = Math.pow(num1, num2);
-        System.out.println("");
-        System.out.println("Result: " + result);
-        System.out.println("");
-        logger.info("Executing exponentiation function.");
-        return result;
-    }
-
-    public static double squareRoot(double num1){
-        if(num1 < 0){
-            System.out.println("");
-            System.out.println("Result: Undefined. Cannot find square root of a negative number!");
-            System.out.println("");
-            logger.info("Executing square root function.");
-            return Double.NaN;
-        }
-        double result = Math.sqrt(num1);
-        System.out.println("");
-        System.out.println("Result: " + result);
-        System.out.println("");
-        logger.info("Executing square root function.");
-        return result;
-    }
-
-    public static int factorial(int num){
-        if(num < 0){
-            System.out.println("");
-            System.out.println("Result: Undefined. Cannot find factorial of a negative number!");
-            System.out.println("");
-            logger.info("Executing factorial function.");
-            return -1;
-        }
-        int result = 1;
-        for(int i = 1; i <= num; i++){
-            result *= i;
-        }
-        System.out.println("");
-        System.out.println("Result: " + result);
-        System.out.println("");
-        logger.info("Executing factorial function.");
-        return result;
-    }
-
-    public static double naturalLogarithm(double num){
-        if(num <= 0){
-            System.out.println("");
-            System.out.println("Result: Undefined. Cannot find natural logarithm of a negative number or zero!");
-            System.out.println("");
-            logger.info("Executing natural logarithm function.");
-            return Double.NaN;
-        }
-        double result = Math.log(num);
-        System.out.println("");
-        System.out.println("Result: " + result);
-        System.out.println("");
-        logger.info("Executing natural logarithm function.");
         return result;
     }
 }
